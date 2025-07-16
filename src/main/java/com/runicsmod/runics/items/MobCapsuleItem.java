@@ -3,7 +3,6 @@ package com.runicsmod.runics.items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -110,7 +109,7 @@ public class MobCapsuleItem extends Item {
             }
         }
         
-        player.sendMessage(new TextComponent("§cNo capturable mobs found nearby (must be tamed by you or have less than 5 HP)"), player.getUUID());
+        player.sendSystemMessage(Component.literal("§cNo capturable mobs found nearby (must be tamed by you or have less than 5 HP)"));
         return InteractionResult.FAIL;
     }
     
@@ -129,7 +128,7 @@ public class MobCapsuleItem extends Item {
         entity.discard();
         
         String captureReason = isTamed ? " (tamed)" : " with " + String.format("%.1f", entity.getHealth()) + " HP";
-        player.sendMessage(new TextComponent("§aCaptured " + entity.getDisplayName().getString() + captureReason), player.getUUID());
+        player.sendSystemMessage(Component.literal("§aCaptured " + entity.getDisplayName().getString() + captureReason));
         
         return InteractionResult.SUCCESS;
     }
@@ -163,11 +162,11 @@ public class MobCapsuleItem extends Item {
                 nbt.remove("MobName");
                 nbt.remove("MobHealth");
                 
-                player.sendMessage(new TextComponent("§aReleased " + entity.getDisplayName().getString()), player.getUUID());
+                player.sendSystemMessage(Component.literal("§aReleased " + entity.getDisplayName().getString()));
                 return InteractionResult.SUCCESS;
             }
         } catch (Exception e) {
-            player.sendMessage(new TextComponent("§cFailed to release mob: " + e.getMessage()), player.getUUID());
+            player.sendSystemMessage(Component.literal("§cFailed to release mob: " + e.getMessage()));
         }
         
         return InteractionResult.FAIL;
@@ -182,16 +181,16 @@ public class MobCapsuleItem extends Item {
             float health = nbt.getFloat("MobHealth");
             boolean wasTamed = nbt.getBoolean("WasTamed");
             
-            tooltip.add(new TextComponent("§7Contains: §f" + mobName));
-            tooltip.add(new TextComponent("§7Health: §c" + String.format("%.1f", health) + " HP"));
+            tooltip.add(Component.literal("§7Contains: §f" + mobName));
+            tooltip.add(Component.literal("§7Health: §c" + String.format("%.1f", health) + " HP"));
             if (wasTamed) {
-                tooltip.add(new TextComponent("§7§o(Was tamed)"));
+                tooltip.add(Component.literal("§7§o(Was tamed)"));
             }
-            tooltip.add(new TextComponent("§7Right-click to release"));
+            tooltip.add(Component.literal("§7Right-click to release"));
         } else {
-            tooltip.add(new TextComponent("§7Empty capsule"));
-            tooltip.add(new TextComponent("§7Use near weakened mobs (< 5 HP)"));
-            tooltip.add(new TextComponent("§7Or tamed animals"));
+            tooltip.add(Component.literal("§7Empty capsule"));
+            tooltip.add(Component.literal("§7Use near weakened mobs (< 5 HP)"));
+            tooltip.add(Component.literal("§7Or tamed animals"));
         }
         
         super.appendHoverText(stack, level, tooltip, flag);
