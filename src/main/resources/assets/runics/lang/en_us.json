@@ -1,0 +1,37 @@
+{
+    "item.runics.algiz_rune":"Algiz Rune",
+    "item.runics.ansuz_rune":"Ansuz Rune",
+    "item.runics.raidho_rune":"Raidho Rune",
+    "item.runics.sowulo_rune":"Sowulo Rune",
+    "item.runics.jera_rune":"Jera Rune",
+    "item.runics.isa_rune":"Isa Rune",
+    "item.runics.eihwaz_rune":"Eihwaz Rune",
+    "item.runics.algiz_inverted_rune":"Algiz Inverted Rune",
+    "item.runics.kenaz_rune":"Kenaz Rune",
+    "item.runics.runic_gem":"Runic Gem",
+    "item.runics.pact_papyrus":"Pact Papyrus",
+    "item.runics.mob_capsule":"Mob Capsule",
+    "itemGroup.runics":"Runics",
+
+    "item.runics.jera_rune.tooltip":"Slowly regenerates hunger over time.",
+    "item.runics.sowulo_rune.tooltip":"Attacks set enemies on fire.",
+    "item.runics.algiz_rune.tooltip":"Reduces incoming damage by 30%%.",
+    "item.runics.ansuz_rune.tooltip":"Befriends animals and prevents their attacks.",
+    "item.runics.raidho_rune.tooltip":"Grants speed and reduced hunger drain while moving.",
+    "item.runics.eihwaz_rune.tooltip":"Hostile mobs ignore you when sneaking or at a distance (10s cooldown when hurt/attacking).",
+    "item.runics.algiz_inverted_rune.tooltip":"Grants invisibility after sneaking for 10 seconds.",
+    "item.runics.isa_rune.tooltip":"Freezes nearby enemies when you take damage (60-second cooldown).",
+    "item.runics.kenaz_rune.tooltip":"Detects blocks of the type you're holding nearby.",
+    "item.runics.mob_capsule.tooltip":"Capture mobs with low health and release them elsewhere.",
+    "tooltip.runics.rune.enabled":"Enabled",
+    "tooltip.runics.rune.disabled":"Disabled",
+    "tooltip.runics.rune.progress":"Progress: %d/%d",
+    
+    "key.runics.activate_pact_ability":"Activate Pact Ability",
+    "key.categories.runics":"Runics",
+    
+    "commands.runics.runes.status":"Active Runes",
+    "commands.runics.runes.clear":"Clear All Runes",
+    "commands.runics.runes.remove":"Remove Specific Rune",
+    "runics.multiple_runes":"Use '/runes status' to see active runes. Right-click with enabled rune to remove it."
+} 

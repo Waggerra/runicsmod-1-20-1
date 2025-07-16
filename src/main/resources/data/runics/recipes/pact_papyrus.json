@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        "BEB",
+        "PPP"
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:paper"
+        },
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        }
+    },
+    "result": {
+        "item": "runics:pact_papyrus",
+        "count": 1
+    }
+} 

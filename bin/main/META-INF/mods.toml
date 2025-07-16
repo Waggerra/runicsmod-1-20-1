@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+issueTrackerURL="https://github.com/runicsmod/runics/issues"
+
+[[mods]]
+modId="runics"
+version="${file.jarVersion}"
+displayName="Runics Mod"
+updateJSONURL=""
+displayURL="https://github.com/runicsmod/runics"
+logoFile="logo.png"
+credits="Thanks to the Minecraft Forge team"
+authors="RunicsMod"
+description='''
+A magical mod that adds ancient runes with powerful effects. Craft and use runes to gain special abilities including hunger reduction, damage boosts, damage resistance, and mob detection.
+'''
+
+[[dependencies.runics]]
+modId="forge"
+mandatory=true
+versionRange="[40,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.runics]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.2,1.19)"
+ordering="NONE"
+side="BOTH" 

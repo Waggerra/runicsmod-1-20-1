@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LVL",
+    "LEL",
+    "LWL"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "V": {
+      "item": "minecraft:lava_bucket"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "runics:mob_capsule",
+    "count": 1
+  }
+} 
