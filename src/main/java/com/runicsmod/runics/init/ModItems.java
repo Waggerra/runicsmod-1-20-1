@@ -15,33 +15,33 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, RunicsMod.MODID);
 
     public static final RegistryObject<Item> RUNIC_GEM = ITEMS.register("runic_gem",
-            () -> new Item(new Item.Properties().tab(RunicsMod.TAB)));
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ANSUZ_RUNE = ITEMS.register("ansuz_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "ansuz"));
+            () -> new RuneItem(new Item.Properties(), "ansuz"));
     public static final RegistryObject<Item> ALGIZ_RUNE = ITEMS.register("algiz_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "algiz"));
+            () -> new RuneItem(new Item.Properties(), "algiz"));
     public static final RegistryObject<Item> RAIDHO_RUNE = ITEMS.register("raidho_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "raidho"));
+            () -> new RuneItem(new Item.Properties(), "raidho"));
     public static final RegistryObject<Item> SOWULO_RUNE = ITEMS.register("sowulo_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "sowulo"));
+            () -> new RuneItem(new Item.Properties(), "sowulo"));
     public static final RegistryObject<Item> JERA_RUNE = ITEMS.register("jera_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "jera"));
+            () -> new RuneItem(new Item.Properties(), "jera"));
     public static final RegistryObject<Item> ISA_RUNE = ITEMS.register("isa_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "isa"));
+            () -> new RuneItem(new Item.Properties(), "isa"));
     public static final RegistryObject<Item> EIHWAZ_RUNE = ITEMS.register("eihwaz_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "eihwaz"));
+            () -> new RuneItem(new Item.Properties(), "eihwaz"));
     public static final RegistryObject<Item> ALGIZ_INVERTED_RUNE = ITEMS.register("algiz_inverted_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "algiz_inverted"));
+            () -> new RuneItem(new Item.Properties(), "algiz_inverted"));
     public static final RegistryObject<Item> KENAZ_RUNE = ITEMS.register("kenaz_rune",
-            () -> new RuneItem(new Item.Properties().tab(RunicsMod.TAB), "kenaz"));
+            () -> new RuneItem(new Item.Properties(), "kenaz"));
     
     public static final RegistryObject<Item> PACT_PAPYRUS = ITEMS.register("pact_papyrus",
-            () -> new PactPapyrusItem(new Item.Properties().tab(RunicsMod.TAB).stacksTo(1)));
+            () -> new PactPapyrusItem(new Item.Properties().stacksTo(1)));
 
     // Cult System Items
     public static final RegistryObject<Item> MOB_CAPSULE = ITEMS.register("mob_capsule",
-            () -> new MobCapsuleItem(new Item.Properties().tab(RunicsMod.TAB).stacksTo(1)));
+            () -> new MobCapsuleItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
